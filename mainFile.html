@@ -10,29 +10,30 @@
 </head>
 <body>
     <div class = "container">
-        <div class = "outputbox"></div>
+        <div id = "displayBox" style = "flex:1; font-size: 80px;"></div>
         <div class = "flexbox">
-            <button class = "number" value = 7></button>
-            <button class = "number" value = 8></button>
-            <button class = "number" value = 9></button>
-            <button class = "operator" value = "*"></button>
+            <button onclick = "addToDisplay(7)" class = "number" value = 7>7</button>
+            <button onclick = "addToDisplay(8)" class = "number" value = 8>8</button>
+            <button onclick = "addToDisplay(9)" class = "number" value = 9>9</button>
+            <button onclick = "setOperator('*')" class = "operator" value = "*">*</button>
         </div>
         <div class = "flexbox">
-            <button class = "number" value = 4></button>
-            <button class = "number" value = 5></button>
-            <button class = "number" value = 6></button>
-            <button class = "operator" value = "-"></button>
+            <button onclick = "addToDisplay(4)" class = "number" value = 4>4</button>
+            <button onclick = "addToDisplay(5)" class = "number" value = 5>5</button>
+            <button onclick = "addToDisplay(6)" class = "number" value = 6>6</button>
+            <button onclick = "setOperator('-')" class = "operator" value = "-">-</button>
         </div>
         <div class = "flexbox">
-            <button class = "number" value = 1></button>
-            <button class = "number" value = 2></button>
-            <button class = "number" value = 3></button>
-            <button class = "operator" value = "+"></button>
+            <button onclick = "addToDisplay(1)" class = "number" value = 1>1</button>
+            <button onclick = "addToDisplay(2)" class = "number" value = 2>2</button>
+            <button onclick = "addToDisplay(3)" class = "number" value = 3>3</button>
+            <button onclick = "setOperator('+')" class = "operator" value = "+">+</button>
         </div>
         <div class = "flexbox">
-            <button class = "number" value = 0></button>
-            <button class = "operator" value = "/"></button>
-            <button class = "equals" value = "="></button>
+            <button onclick = "addToDisplay(0)" class = "number" value = 0> 0</button>
+            <button onclick = "setOperator('/')" class = "operator" value = "/"> /</button>
+            <button onclick = "clearBox()" class = "clear" value = "clear"> A/C </button>
+            <button onclick = "doOperation()" class = "equals" value = "="> =</button>
         </div>
     </div>
 
