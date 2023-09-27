@@ -1,0 +1,39 @@
+.container
+{
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 600px;
+    height:800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+}
+.outputbox
+{
+    flex: 1;
+    background-color: black;
+}
+.flexbox
+{
+    flex:1;
+    display:flex;
+    flex-direction: row;
+
+}
+.number
+{
+    flex:1;
+}
+.operator
+{
+
+    flex:1;
+}
+.equals
+{
+    flex:1;
+}
